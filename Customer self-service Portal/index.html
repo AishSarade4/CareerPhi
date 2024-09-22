@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Self-Service Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Insurance Customer Self-Service Portal</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <button onclick="showSection('claim-section')">File a Claim</button>
+      <button onclick="showSection('track-section')">Track Claims</button>
+      <button onclick="showSection('knowledge-base-section')">
+        Search Knowledge Base
+      </button>
+    </nav>
+
+    <!-- Claim Submission Section -->
+    <section id="claim-section">
+      <form id="claim-form">
+        <h2>Submit a New Insurance Claim</h2>
+        <label for="policy-number">Policy Number:</label>
+        <input type="text" id="policy-number" required />
+
+        <label for="incident-date">Incident Date:</label>
+        <input type="date" id="incident-date" required />
+
+        <label for="incident-description">Incident Description:</label>
+        <textarea id="incident-description" required></textarea>
+
+        <label for="supporting-docs">Attach Files:</label>
+        <input type="file" id="supporting-docs" multiple required />
+
+        <button type="submit">Submit Claim</button>
+        <p id="success-message"></p>
+      </form>
+    </section>
+
+    <!-- Track Claims Section -->
+    <section id="track-section" class="hidden">
+      <h2>Track Your Claims</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Claim Number</th>
+            <th>Status</th>
+            <th>Date Submitted</th>
+          </tr>
+        </thead>
+        <tbody id="claims-list"></tbody>
+      </table>
+    </section>
+
+    <!-- Chatbot Section -->
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Assistant"
+      agent-id="d997b889-6842-4196-bade-978485952060"
+      language-code="en"
+    ></df-messenger>
+
+    <!-- Knowledge Base Section -->
+    <section id="knowledge-base-section" class="hidden">
+      <h2>Search Knowledge Base</h2>
+      <!-- <input type="text" id="search-bar" placeholder="Search articles..." />
+      <ul id="search-results"></ul> -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Search for insurance topics..."
+          oninput="searchArticles()"
+        />
+        <div class="results" id="results"></div>
+      </div>
+    </section>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

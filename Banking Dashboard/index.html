@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="banking-dashboard">Banking Dashboard</div>
+
+    <div id="account-balance">Current Balance: $1,000.00</div>
+
+    <div class="transaction-section">
+      <input
+        type="number"
+        id="deposit-amount"
+        placeholder="Enter Deposit Amount"
+      />
+      <button onclick="deposit()">Deposit</button>
+    </div>
+
+    <div id="transaction-section" class="transaction-section">
+      <input
+        type="number"
+        id="withdrawal-amount"
+        placeholder="Enter Withdrawal Amount"
+      />
+      <button onclick="withdraw()">Withdraw</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

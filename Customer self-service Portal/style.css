@@ -1,0 +1,222 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+header {
+  background-color: rgb(44, 19, 68);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1,
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 12px;
+  background-color: #8853b1;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #7e4786;
+}
+label {
+  color: rgb(58, 33, 82);
+  font-weight: 700;
+}
+section {
+  margin-bottom: 30px;
+}
+form input,
+form textarea {
+  display: block;
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #543310;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/* Hover effect */
+form input:hover,
+form textarea:hover {
+  background-color: #f0f0f0; /* Slight change on hover */
+}
+
+/* Focus effect for better user interaction */
+form input:focus,
+form textarea:focus {
+  border-color: #7a5315; /* Darker shade to indicate focus */
+  background-color: #fff;
+  outline: none; /* Removes default focus outline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on focus */
+}
+
+/* Placeholder text styling */
+form input::placeholder,
+form textarea::placeholder {
+  color: rgb(136, 136, 136);
+  font-style: italic;
+}
+form button {
+  width: 100%;
+  background-color: rgb(6, 172, 6);
+}
+form button:hover {
+  background-color: rgb(4, 132, 4);
+}
+#claim-section {
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #f8f9fa; /* Light background for table */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fdfdfd; /* Very light background for table */
+}
+table,
+th,
+td {
+  border: 1.5px solid #b8b5b5; /* Soft gray border */
+  padding: 12px;
+  text-align: left;
+  color: #4a4a4a; /* Medium gray text for better readability */
+}
+th {
+  background-color: #f5ecf8; /* Light blue header background */
+  color: #333333; /* Dark gray text for headers */
+  font-weight: bold;
+  font-size: 15px; /* Subtle font size */
+  letter-spacing: 0.5px; /* Slight letter spacing for clarity */
+}
+td {
+  background-color: #fafafa; /* Off-white background for cells */
+  color: #4a4a4a; /* Medium gray text for content */
+}
+tr:nth-child(even) {
+  background-color: #f0f8ff; /* Very light blue row coloring */
+}
+tr:hover {
+  background-color: #f9f9f9; /* Subtle hover effect */
+}
+.hidden {
+  display: none !important;
+}
+df-messenger {
+  --df-messenger-bot-message: rgb(158, 157, 157);
+  --df-messenger-button-titlebar-color: #7e119f;
+  --df-messenger-chat-background-color: #fafafa;
+  --df-messenger-font-color: rgb(250, 250, 250);
+  --df-messenger-send-icon: rgb(74, 31, 138);
+  --df-messenger-user-message: #8d1caf;
+  --df-messenger-font-family: Arial;
+}
+.user-input {
+  width: 80%;
+  padding: 10px;
+}
+.send-btn {
+  padding: 6px 12px;
+  background-color: #755f4a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.search-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #543310;
+  border-radius: 5px;
+}
+.results {
+  margin-top: 20px;
+}
+.article {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.article h3 {
+  margin: 0 0 10px;
+}
+
+/* Responsive Design - Media Query for Mobile Devices */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .chat-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .user-input {
+    width: 70%;
+  }
+
+  .send-btn {
+    width: 25%;
+  }
+}
+/* Form Validation Feedback */
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+#banking-dashboard {
+  font-size: 52px;
+  text-align: center;
+  font-weight: 600;
+  color: #050a61;
+}
+#container{
+  background-color:rgb(116, 216, 250);
+  height: 250px;
+  margin-top: 100px;
+  margin-left: 480px;
+  margin-right: 480px;
+  padding-bottom: 60px;
+  border-radius: 15px;
+  border: 4px solid  #050a61;
+}
+#account-balance {
+  font-size: 28px;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #000000;
+  padding-top: 30px;
+}
+.transaction-section {
+  text-align: center;
+  margin-top: 20px;
+}
+#transaction-section {
+  margin-left: 15px;
+}
+.transaction-section input {
+  padding: 8px;
+  font-size: 20px;
+  width: 300px;
+}
+.transaction-section button {
+  padding: 8px;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: rgb(46, 7, 63);
+  color: white;
+}
+::placeholder {
+  color: rgb(106, 106, 106);
+}
