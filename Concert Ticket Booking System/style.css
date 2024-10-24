@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  background-image: url(./pexels-sebastian-ervi-866902-1763075.jpg);
+  background-size: cover;
+}
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 35px;
+}
+.linear-text-gradient {
+  background: linear-gradient(to top, rgb(218, 5, 5), rgb(251, 251, 32));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+#quantity {
+  width: 480px;
+  border: 2px solid black;
+}
+#concert,
+#ticketType {
+  border: 2px solid black;
+}
+form select,
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #020202;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(61, 60, 60);
+}
+.hidden {
+  display: none;
+}
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+#editBooking {
+  width: 180px;
+  margin-right: 30px;
+  padding: 12px;
+}
+#submitTickets {
+  width: 180px;
+  padding: 12px;
+}
+#bookingSummary {
+  margin-left: 50px;
+}
